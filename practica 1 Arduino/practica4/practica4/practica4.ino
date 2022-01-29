@@ -26,14 +26,14 @@ void loop() {
   }
   else if(valorpot >= 256 && valorpot <= 600)
   {
-    valor1 = 0;
+    valor1 = 255;
     valor2 = 255;
     valor3 = 0;
   }
   else
   {
-    valor1 = 0;
-    valor2 = 0;
+    valor1 = 255;
+    valor2 = 255;
     valor3 = 255;
   }
   
