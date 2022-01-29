@@ -8,15 +8,22 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite( 13, HIGH ); //MANDAMOS QUE SE PRENDA EL LED
-  delay(500);
+  delay(200);
   digitalWrite( 13, LOW );  //MANDAMOS SE APAGA EL LED
-  //delay(1000);
   digitalWrite( 12, HIGH ); //MANDAMOS QUE SE PRENDA EL LED
-  delay(500);
+  delay(200);
   digitalWrite( 12, LOW );  //MANDAMOS SE APAGA EL LED
-  //delay(1000);
   digitalWrite( 11, HIGH ); //MANDAMOS QUE SE PRENDA EL LED
-  delay(500);
+  delay(200);
   digitalWrite( 11, LOW );  //MANDAMOS SE APAGA EL LED
-  //delay(1000);
+
+  digitalWrite( 11, HIGH ); //MANDAMOS QUE SE PRENDA EL LED
+  delay(200);
+  digitalWrite( 11, LOW );  //MANDAMOS SE APAGA EL LED
+  digitalWrite( 12, HIGH ); //MANDAMOS QUE SE PRENDA EL LED
+  delay(200);
+  digitalWrite( 12, LOW );  //MANDAMOS SE APAGA EL LED
+  digitalWrite( 13, HIGH ); //MANDAMOS QUE SE PRENDA EL LED
+  delay(200);
+  digitalWrite( 13, LOW );  //MANDAMOS SE APAGA EL LED
 }
