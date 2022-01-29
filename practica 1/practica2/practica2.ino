@@ -13,20 +13,20 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   int valorpot = analogRead(A0);
-  float vol = valorpot * (255.0/1023.0);
+  int valor = map ( valorpot, 0, 1023, 0, 255 );
 
   Serial.print(valorpot);
   Serial.print(" ");
-  Serial.print(vol);
+  Serial.print(valor);
   Serial.print(" ");
   
-  analogWrite( led1, vol );  //MANDAMOS QUE SE PRENDA EL LED
+  analogWrite( led1, valor );  //MANDAMOS QUE SE PRENDA EL LED
   delay(1000);
   analogWrite( led1, 0 );         //MANDAMOS SE APAGA EL LED
-  analogWrite( led2, vol );  //MANDAMOS QUE SE PRENDA EL LED
+  analogWrite( led2, valor );  //MANDAMOS QUE SE PRENDA EL LED
   delay(1000);
   analogWrite( led2, 0 );         //MANDAMOS SE APAGA EL LED
-  analogWrite( led3, vol );  //MANDAMOS QUE SE PRENDA EL LED
+  analogWrite( led3, valor );  //MANDAMOS QUE SE PRENDA EL LED
   delay(1000);
   analogWrite( led3, 0 );         //MANDAMOS SE APAGA EL LED
 }
